@@ -21,7 +21,7 @@ body {
 
 nav {
   width: 100%;
-  position: absolute;
+  position: fixed;
   background-color: #74c476;
   overflow: hidden;
   top: 0;
@@ -57,7 +57,7 @@ nav ul li:hover {
   background-color: #2f9b50;
 }
 
-.parallax {
+#parallax {
   background-image: url(../img/cannabis.jpg);
   height: 100%;
   background-size: cover;
@@ -67,7 +67,7 @@ nav ul li:hover {
   color: #fff;
 }
 
-.parallax .textbox {
+#parallax .textbox {
   text-align: center;
   position: relative;
   top: 40%;
@@ -179,15 +179,24 @@ mark {
   color: white;
 }
 
-.about .row:first-child .col,
-.wtfu .row:first-child .col,
-.news .row:first-child .col {
+.img6 {
+  background-image: url(../img/sns.png);
+  background-position: center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+}
+
+#about .row:first-child .col,
+#wtfu .row:first-child .col,
+#news .row:first-child .col,
+footer {
   background-color: #74c476;
 }
 
-.about .row:first-child .col h1,
-.wtfu .row:first-child .col h1,
-.news .row:first-child .col h1 {
+#about .row:first-child .col h1,
+#wtfu .row:first-child .col h1,
+#news .row:first-child .col h1,
+footer h1 {
   font-size: 50px;
   text-align: center;
   color: #fff;
@@ -196,5 +205,28 @@ mark {
 .map {
   overflow: hidden;
   width: 100%;
+}
+
+footer .row .col {
+  text-align: center;
+  color: #fff;
+}
+
+footer .row .col ul {
+  text-align: left;
+}
+
+footer .row .col ul li {
+  list-style: none;
+  text-align: left;
+}
+
+footer .row .col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .row .col h2 {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */
